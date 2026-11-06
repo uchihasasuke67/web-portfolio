@@ -1,0 +1,556 @@
+/* --- Simple Main Variables --- */
+:root {
+    --bg-dark: #062b2b;
+    --bg-darker: #041f1f;
+    --card-bg: rgba(14, 58, 58, 0.6);
+    --main-green: #20b2aa;
+    --bright-green: #36d7cb;
+    --light-green: #64eedf;
+    --text-white: #ffffff;
+    --text-gray: #90b3b3;
+    --border-line: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* --- Navigation Header --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--bg-dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border-line);
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    color: var(--main-green);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-gray);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--light-green);
+}
+
+/* --- Simple Button Styling --- */
+.btn {
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-main {
+    background-color: var(--main-green);
+    color: #041f1f;
+}
+
+.btn-main:hover {
+    background-color: var(--light-green);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border-line);
+    color: var(--text-white);
+}
+
+.btn-secondary:hover {
+    border-color: var(--main-green);
+    color: var(--main-green);
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* --- Simple Card Box --- */
+.card-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border-line);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 50px;
+}
+
+.badge {
+    color: var(--light-green);
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero-text p {
+    color: var(--text-gray);
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 380px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 75%;
+    height: 100%;
+    background: var(--main-green);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.growth-text {
+    color: var(--light-green);
+}
+
+.chart-line {
+    height: 60px;
+    margin-top: 15px;
+    border-bottom: 2px solid var(--main-green);
+    background: linear-gradient(180deg, rgba(32, 178, 170, 0.2) 0%, rgba(32, 178, 170, 0) 100%);
+}
+
+/* --- Common Section Styles --- */
+.section-container {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--text-gray);
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--text-gray);
+    margin-bottom: 50px;
+}
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: var(--main-green);
+    margin-bottom: 15px;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--light-green);
+    font-size: 0.9rem;
+}
+
+/* --- Tools & Steps --- */
+.step-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.step-number {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--card-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    border: 1px solid var(--border-line);
+}
+
+.tool-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.tool-item {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--border-line);
+    font-weight: bold;
+}
+
+/* --- Reviews Slider --- */
+.slider-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.arrow-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--border-line);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.review-card {
+    background: white;
+    color: #111;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.quote-mark {
+    font-size: 2.5rem;
+    color: var(--main-green);
+    line-height: 0;
+}
+
+.quote-text {
+    margin: 20px 0;
+    font-size: 1.05rem;
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.slide-count {
+    margin-left: auto;
+    color: #888;
+}
+
+/* --- Pricing Section --- */
+.toggle-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.switch-button {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch-button input { opacity: 0; width: 0; height: 0; }
+
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-line);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px; width: 18px;
+    left: 4px; bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .switch-slider { background-color: var(--main-green); }
+input:checked + .switch-slider:before { transform: translateX(24px); }
+
+.discount-label {
+    background: rgba(32, 178, 170, 0.2);
+    color: var(--light-green);
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: center;
+}
+
+.featured-card {
+    background: white;
+    color: #111;
+    padding: 40px 30px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.top-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--main-green);
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    border-radius: 12px;
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.plan-features {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* --- Call To Action --- */
+.cta-box {
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-box h2 { margin-bottom: 15px; }
+.cta-box p { color: var(--text-gray); margin-bottom: 30px; }
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--bg-darker);
+    padding: 60px 8% 30px;
+    border-top: 1px solid var(--border-line);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info {
+    max-width: 320px;
+}
+
+.footer-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-info input {
+    background: var(--card-bg);
+    border: 1px solid var(--border-line);
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-group h4 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.link-group a {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-line);
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+.bottom-links a {
+    margin-left: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .hero, .footer-top, .step-container {
+        flex-direction: column;
+    }
+    .skills-grid, .pricing-grid, .tool-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Burger menu button */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        width: 100%;
+        padding: 25px 0;
+        background: var(--bg-darker);
+        border-radius: 12px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+}

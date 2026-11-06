@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altynai Isabekova | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+    <a href="#about" class="logo">Altynai.dev</a>
+
+    <button class="burger-menu" id="burgerMenu"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="btn btn-teal">Hire Me</a>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-text">
+            <span class="badge">• WEB DEVELOPER & STUDENT</span>
+            <h1>Crafting Digital Experiences with Code</h1>
+            <p>I'm Altynai Isabekova, a 2nd-year Web Development student at Ala-Too IT & Business College. I build modern, fast, and interactive web applications.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-main">Contact Me</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-widgets">
+            <div class="widget card-box">
+                <div class="widget-icon">✦</div>
+                <h3>Academic Progress</h3>
+                <p>2nd Year Student @ Ala-Too IT & Business College</p>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
+            <div class="widget card-box chart-widget">
+                <div class="chart-header">
+                    <span>Code Activity</span>
+                    <span class="growth-text">+34.2% this month</span>
+                </div>
+                <div class="chart-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container" id="skills">
+        <span class="section-title">CORE SKILLS</span>
+        <h2>Everything You Need for Modern Web Apps</h2>
+        <p class="subtitle">Equipped with fundamental and modern software skills to bring ideas to life.</p>
+
+        <div class="skills-grid">
+            <div class="card-box">
+                <div class="card-icon">⚡</div>
+                <h3>Frontend Development</h3>
+                <p>Creating clean, responsive interfaces with HTML5, CSS3, JavaScript, and modern frameworks.</p>
+            </div>
+            <div class="card-box">
+                <div class="card-icon">🕒</div>
+                <h3>Clean Architecture</h3>
+                <p>Structuring maintainable, standard-compliant, and accessible code for scalable web projects.</p>
+            </div>
+            <div class="card-box">
+                <div class="card-icon">⚡</div>
+                <h3>UI & UX Focus</h3>
+                <p>Translating client visual wireframes into sleek interactive applications.</p>
+            </div>
+            <div class="card-box">
+                <div class="card-icon">⬡</div>
+                <h3>Version Control & Tooling</h3>
+                <p>Proficient in Git, GitHub, IntelliJ IDEA, and practical developer workflows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow / Tools Section -->
+    <section class="section-container">
+        <span class="section-title">STACK & WORKFLOW</span>
+        <h2>Work With Your Favourite Tools</h2>
+        <p class="subtitle">Seamlessly integrating modern tech stacks into everyday projects.</p>
+
+        <div class="step-container">
+            <div class="step-box">
+                <span class="step-number">01</span>
+                <div class="step-icon">A</div>
+                <h4>Design & Plan</h4>
+                <p>Wireframing structural concepts and UI flows.</p>
+            </div>
+            <div class="step-box">
+                <span class="step-number">02</span>
+                <div class="step-icon">⚙</div>
+                <h4>Development</h4>
+                <p>Writing clean HTML, modular CSS, and JavaScript.</p>
+            </div>
+            <div class="step-box">
+                <span class="step-number">03</span>
+                <div class="step-icon">❖</div>
+                <h4>Deployment</h4>
+                <p>Testing, optimizing, and going live with projects.</p>
+            </div>
+        </div>
+
+        <div class="tool-list">
+            <div class="tool-item">HTML5</div>
+            <div class="tool-item">CSS3</div>
+            <div class="tool-item">JavaScript</div>
+            <div class="tool-item">Git</div>
+            <div class="tool-item">GitHub</div>
+            <div class="tool-item">IntelliJ</div>
+            <div class="tool-item">VS Code</div>
+            <div class="tool-item">Figma</div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-container">
+        <span class="section-title">FEEDBACK & RECOMMENDATIONS</span>
+        <h2>What People Say</h2>
+        <p class="subtitle">Endorsements from classmates, mentors, and collaborative project members.</p>
+
+        <div class="slider-box">
+            <button class="arrow-btn" id="prevBtn">←</button>
+            <div class="review-card" id="reviewCard">
+                <span class="quote-mark">“</span>
+                <p class="quote-text" id="quoteText">Altynai is an exceptionally focused developer. Her work at Ala-Too College shows real craftsmanship and attention to modern design details.</p>
+                <div class="author-box">
+                    <div class="author-avatar" id="avatarLetter">A</div>
+                    <div>
+                        <strong id="authorName">Radiia M.</strong>
+                        <span id="authorRole">Peer & Software Developer</span>
+                    </div>
+                    <span class="slide-count" id="slideCounter">01/03</span>
+                </div>
+            </div>
+            <button class="arrow-btn" id="nextBtn">→</button>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="section-container" id="services">
+        <span class="section-title">SERVICES & RATES</span>
+        <h2>Choose Your Plan</h2>
+        <p class="subtitle">Flexible engagement options for personal websites, landing pages, and web apps.</p>
+
+        <div class="toggle-box">
+            <span>Project-Based</span>
+            <label class="switch-button">
+                <input type="checkbox" id="priceCheckbox">
+                <span class="switch-slider"></span>
+            </label>
+            <span>Hourly Rate <span class="discount-label">Save 20%</span></span>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="price-box card-box">
+                <div class="card-icon">✦</div>
+                <h3>Landing Page</h3>
+                <div class="price-amount" id="basicPrice">$150</div>
+                <ul class="plan-features">
+                    <li>✓ Responsive Design</li>
+                    <li>✓ Single Page HTML/CSS/JS</li>
+                    <li>✓ Mobile Friendly</li>
+                    <li>✓ Contact Form Setup</li>
+                </ul>
+                <button class="btn btn-secondary btn-full">Get Started</button>
+            </div>
+
+            <!-- Business Plan (Featured) -->
+            <div class="price-box featured-card">
+                <span class="top-tag">Most Popular</span>
+                <div class="card-icon">✦</div>
+                <h3>Full Website</h3>
+                <div class="price-amount" id="proPrice">$350</div>
+                <ul class="plan-features">
+                    <li>✓ Multi-Page Web App</li>
+                    <li>✓ Custom JavaScript Interactivity</li>
+                    <li>✓ Optimized Performance</li>
+                    <li>✓ Deployment & Hosting Help</li>
+                </ul>
+                <button class="btn btn-main btn-full">Get Started</button>
+            </div>
+
+            <!-- Custom Plan -->
+            <div class="price-box card-box">
+                <div class="card-icon">⬡</div>
+                <h3>Custom Project</h3>
+                <div class="price-amount" id="customPrice">$500+</div>
+                <ul class="plan-features">
+                    <li>✓ Complex UI Components</li>
+                    <li>✓ Custom Backend Integration</li>
+                    <li>✓ API Connections</li>
+                    <li>✓ Ongoing Maintenance</li>
+                </ul>
+                <button class="btn btn-secondary btn-full">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-box">
+        <h2>Ready to Build Something Great?</h2>
+        <p>Let's turn your vision into a stunning visual web experience.</p>
+        <a href="#contact" class="btn btn-main">Get Started Free</a>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="footer-info">
+                <div class="logo"><span class="logo-icon">◆</span> Altynai Isabekova</div>
+                <p>Seeking personalized web development support or collaboration?</p>
+                <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn btn-main">Send a Request</button>
+                </form>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navigation</h4>
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Pricing</a>
+                </div>
+                <div class="link-group">
+                    <h4>Education</h4>
+                    <a href="#">Ala-Too College</a>
+                    <a href="#">Web Dev Program</a>
+                    <a href="#">Projects</a>
+                </div>
+                <div class="link-group">
+                    <h4>Socials</h4>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Telegram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Altynai Isabekova. All rights reserved.</span>
+            <div class="bottom-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
